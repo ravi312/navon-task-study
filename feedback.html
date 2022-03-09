@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How was your experience?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="feedback-container">
+    <form action="thankyou.html">
+    <label>1) How well do you think you did, out of 100% (with 1 being terrible, and 100 being perfect)? </label>
+    <input type="text" name="q1" id="q1"/><br>
+
+    <label>2) In 1-2 sentences, what do you think this experiment was testing?</label><br>
+    <textarea id="q2" name="q2" rows="4" cols="50"></textarea><br>
+
+    <label>3) We know it is generally difficult to stay focused in these online experiments.  On a scale of 1-100 (with 1 being very distracted, and 100 being very focused), how well did you pay attention to the experiment? (This will not affect whether you receive credit or compensation)
+    </label>
+    <input type="text" name="q3" id="q3"/><br>
+        
+    <label>4) Any other comment or question?</label>
+    <textarea id="q4" name="q4" rows="4" cols="50"></textarea><br>
+
+    <button type="button" id="btn-intro" onclick=displayInConsole() name="btn-intro">Next</button>
+</form>
+</div>
+<script src="feedback.js" async></script>
+
+</body>
+</html>
