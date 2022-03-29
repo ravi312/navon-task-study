@@ -1,7 +1,6 @@
 const btnNext=document.getElementById('btn-intro');
 btnNext.style.visibility = "hidden";
 const consent = document.getElementById('consent').value;
-
 // get the elements
 function displayInConsole(){
     localStorage.clear();

@@ -11,6 +11,13 @@
 <body>
 
     <h1>Thank you!</h1>
-    
+    <button id="restart" onclick="backHome()">Home</button>
+    <script>
+        const btnHome= document.getElementById('restart');
+        function backHome(){
+            window.location.href="index.html";
+            //location.reload();
+        }
+    </script>
 </body>
 </html>
