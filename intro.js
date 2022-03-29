@@ -1,3 +1,7 @@
+const btnNext=document.getElementById('btn-intro');
+btnNext.style.visibility = "hidden";
+const consent = document.getElementById('consent').value;
+
 // get the elements
 function displayInConsole(){
     localStorage.clear();
@@ -25,7 +29,7 @@ function displayFromLocal(){
     console.log(userName);
     console.log(studyDate);
     console.log(consent);
-    window.location.href="navon-intro.html";
+    window.location.href="grade.html";
 }
 
 function removeFromLocal(){
@@ -33,3 +37,8 @@ function removeFromLocal(){
     window.localStorage.removeItem('studyDate');
     window.localStorage.removeItem('consent');
 }
+
+function showNextButton() {
+    btnNext.style.visibility = "visible";
+   
+  };

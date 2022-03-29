@@ -41,14 +41,15 @@
 
         <label for="start">Date (DD-MM-YY)</label>
         <input type="text" id="studyDate" name="studyDate" value=""><br>
-
-        <label for="start">Type "Yes" if you consent to the participate in study.</label>
-        <input type="text" id="consent" name="consent" value=""><br>
+         
+        <label for="start">Select "Yes" if you consent to the participate in study.</label><br>
+        Yes
+        <input type="radio" id="consent" name="consent" value="yes" onclick="showNextButton()"><br>
         <br>
         <br>
         <button type="button" id="btn-intro" onclick=displayInConsole() name="btn-intro">Next</button>
         </form>
-
+        
     </div>
   
 <script  type="text/javascript" src="./intro.js"></script>
