@@ -17,7 +17,7 @@ function getValuesFromLS(){
     console.log(preNavon);
     let preNavonArray="";
     for(let i=0;i<12;i++){
-        preNavonArray+=preNavon[i] + ";"; 
+        preNavonArray+=preNavon[i] + ","+"pre"+"\n"; 
         
     }
     console.log(preNavonArray);
@@ -28,14 +28,14 @@ function getValuesFromLS(){
     console.log(postNavon);
     let postNavonArray="";
     for(let i=0;i<12;i++){
-        postNavonArray+=postNavon[i] + ";"; 
+        postNavonArray+=postNavon[i] + ","+ "post"+"\n"; 
         
     }
     let q1 = window.localStorage.getItem("q1");
     let q2 = window.localStorage.getItem("q2");
     let q3 = window.localStorage.getItem("q3");
     let q4 = window.localStorage.getItem("q4");
-    csvOutput=userName+";"+studyDate+";"+consent+ ";"+grade+ ";"+ preNavonArray+ ";"+ reading+";"+ readingCode+";"+postNavonArray+";"+q1+";"+q2+";"+q3+";"+q4; 
+    csvOutput="UserName"+","+ userName+ "\n"+"Date"+","+studyDate+"\n"+"Consent"+","+consent+"\n"+"grade"+","+grade+"\n"+ preNavonArray+ "reading"+ ","+reading+","+ readingCode+"\n"+postNavonArray+q1+"\n"+q2+"\n"+q3+"\n"+q4; 
    console.log(csvOutput);
 }
 
