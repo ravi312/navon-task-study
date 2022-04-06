@@ -33,3 +33,17 @@ button {
     padding: 8px;
     margin: 8px;
 }
+
+
+.std-consent{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.navon-intro{
+    display: block;
+    font-size: 16px;
+    padding: 50px;
+    margin:50px;
+}

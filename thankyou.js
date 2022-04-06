@@ -1,6 +1,7 @@
 let csvOutput;
 const btnDownload = document.getElementById('download');
 const btnHome= document.getElementById('restart');
+btnHome.style.visibility = "hidden";
 
 function backHome(){
             window.location.href="index.html";
@@ -76,4 +77,5 @@ var url = window.URL.createObjectURL(CSVFile);
     // Automatically click the link to trigger download
     temp_link.click();
     document.body.removeChild(temp_link);
+    btnHome.style.visibility = "visible";
 }
