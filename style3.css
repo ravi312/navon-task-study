@@ -35,15 +35,16 @@ button {
 }
 
 
-.std-consent{
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
 .navon-intro{
     display: block;
     font-size: 16px;
     padding: 50px;
     margin:50px;
+}
+
+.std-consent{
+    display: block;
+    font-size: 17px;
+    padding: 20px;
+    margin:20px;
 }
